@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="count">0</div>
+    <button class="inc">inc</button>
+    <button class="dec">dec</button>
+
+    <script>
+      const countEl = document.querySelector(".count");
+      const incButtonEl = document.querySelector(".inc");
+      const decButtonEl = document.querySelector(".dec");
+      let count = 0;
+      incButtonEl.addEventListener("click", () => {
+        count++;
+        console.log(count);
+        countEl.innerText = count;
+      });
+
+      countEl.addEventListener("click");
+    </script>
+  </body>
+</html>
